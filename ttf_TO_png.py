@@ -12,7 +12,7 @@ upper_elems = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮ�
 etc_elems = "1234567890‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*"
 
 # for example
-etc_elems="A"
+etc_elems="f"
 
 def create_image(word, font):
   image = Image.new('RGB', (W, H), "white")
