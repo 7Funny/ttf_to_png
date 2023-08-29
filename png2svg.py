@@ -8,7 +8,7 @@ doc = aw.Document()
 # Create a document builder object
 builder = aw.DocumentBuilder(doc)
 
-for dirs, folder, files in os.walk("fontpng/"):
+for dirs, folder, files in os.walk("fontpngdel/"):
     for file in files:
         # Load and insert PNG image
         shape = builder.insert_image(os.path.join(dirs, file))
@@ -17,4 +17,4 @@ for dirs, folder, files in os.walk("fontpng/"):
         saveOptions = aw.saving.ImageSaveOptions(aw.SaveFormat.SVG)
 
         # Save image as SVG
-        shape.get_shape_renderer().save(f"svg/{os.path.splitext(file)[0]}.svg", saveOptions)
+        shape.get_shape_renderer().save(f"svgdel/{os.path.splitext(file)[0]}.svg", saveOptions)
